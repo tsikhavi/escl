@@ -1,0 +1,35 @@
+{
+  "name": "escl",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.1.1",
+    "@material-tailwind/react": "^2.1.8",
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.1.0",
+    "@types/mdx": "^2.0.10",
+    "next": "14.1.0",
+    "next-pwa": "^5.6.0",
+    "react": "^18",
+    "react-datepicker": "^6.1.0",
+    "react-dom": "^18",
+    "react-hook-form": "^7.50.0",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "prettier": "3.2.4",
+    "tailwindcss": "^3.3.0"
+  }
+}

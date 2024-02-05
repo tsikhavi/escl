@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "alvaai.alva",
+    "cmstead.js-codeformer",
+    "loczek.next-js-ts-snippets",
+    "msjsdiag.vscode-react-native",
+    "burkeholland.simple-react-snippets",
+    "xabikos.javascriptsnippets",
+    "vadistic.mdx-inline",
+    "unifiedjs.vscode-mdx",
+    "bradlc.vscode-tailwindcss",
+    "austenc.tailwind-docs",
+    "alfredbirk.tailwind-documentation",
+    "skyran.js-jsx-snippets",
+    "zarifprogrammer.tailwind-snippets"
+  ]
+}

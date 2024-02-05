@@ -1,0 +1,11 @@
+{
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "proseWrap": "preserve",
+  "printWidth": 80,
+  "trailingComma": "es5",
+  "singleQuote": false,
+  "bracketSpacing": true
+}
