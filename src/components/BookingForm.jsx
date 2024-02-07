@@ -1,7 +1,4 @@
-// components/BookingForm.js
 import React, { useState } from "react";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css"; // Import the styles
 import { useForm } from "react-hook-form";
 import ProductItem from "./ProductItem";
 import CartItem from "./CartItem";
@@ -26,16 +23,18 @@ const BookingForm = ({ products }) => {
 
   const onSubmit = (data) => {
     // Handle form submission (e.g., send data to server)
-    console.log(data);
+    //alert("success");
   };
 
   return (
-    <div>
-      <h2>Booking Form</h2>
+    <>
+      <h1 className="text-xl text-center py-8 font-semibold uppercase">Booking Form</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex">
-          <div className="w-1/2">
-            <h3>Available Products</h3>
+        <div className="flex gap-4">
+          <div className="w-1/2 border-e-2 px-4 shadow-xl rounded-md">
+            <h3 className="text-sm uppercase font-semibold underline underline-offset-2 py-2 ">
+              Available Products
+            </h3>
             {products.map((product) => (
               <ProductItem
                 key={product.id}
@@ -45,8 +44,10 @@ const BookingForm = ({ products }) => {
             ))}
           </div>
 
-          <div className="w-1/2">
-            <h3>Your Cart</h3>
+          <div className="w-1/2 px-10">
+            <h3 className="text-sm uppercase font-semibold underline underline-offset-2 py-2 ">
+              Your Cart
+            </h3>
             {cart.map((item) => (
               <CartItem
                 key={item.id}
@@ -55,55 +56,28 @@ const BookingForm = ({ products }) => {
               />
             ))}
             <p>Total Cost: ${calculateTotalCost()} per hour</p>
-            <label htmlFor="bookingDate" className="block mt-4">
-              Select Booking Date:
-            </label>
-            <input
-              type="date"
-              id="bookingDate"
-              value={selectedDate}
-              onChange={(e) => setSelectedDate(e.target.value)}
-              className="border p-2 rounded-md"
-            />
-          </div>
-          <div className="w-1/2">
-            <h3>Your Cart</h3>
-            {cart.map((item) => (
-              <CartItem
-                key={item.id}
-                item={item}
-                onRemoveFromCart={removeFromCart}
-              />
-            ))}
-            <p>Total Cost: ${calculateTotalCost()} per hour</p>
-
-            {/* Date Picker */}
-            <label htmlFor="bookingDate">Select Booking Date:</label>
-            <DatePicker
-              id="bookingDate"
-              selected={selectedDate}
-              onChange={(date) => setSelectedDate(date)}
-              className={`border p-2 rounded-md ${
-                errors.bookingDate ? "border-red-500" : ""
-              }`}
-              dateFormat="yyyy-MM-dd"
-              placeholderText="Select a date"
-              name="bookingDate"
-              ref={register({ required: true })}
-            />
-            {errors.bookingDate && (
-              <p className="text-red-500">Booking date is required</p>
-            )}
 
             <button
               type="submit"
               className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4">
-              Book Now
+              Check Out
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6 px-1 inline-flex">
+                <path d="M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z" />
+                <path
+                  fillRule="evenodd"
+                  d="M22.5 9.75h-21v7.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-7.5Zm-18 3.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z"
+                  clipRule="evenodd"
+                />
+              </svg>
             </button>
           </div>
         </div>
       </form>
-    </div>
+    </>
   );
 };
 

@@ -1,4 +1,3 @@
-import MapCard from "@/components/MapCard";
 
 export default function Contact() {
   return (
@@ -10,9 +9,9 @@ export default function Contact() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96709.90057483074!2d-74.0683570744939!3d40.75796896971022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2ske!4v1707140925063!5m2!1sen!2ske"
             width="600"
             height="450"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerPolicy="no-referrer-when-downgrade"></iframe>
           <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
@@ -45,7 +44,7 @@ export default function Contact() {
             Post-ironic portland shabby chic echo park, banjo fashion axe
           </p>
           <div className="relative mb-4">
-            <label for="name" className="leading-7 text-sm text-gray-600">
+            <label htmlFor="name" className="leading-7 text-sm text-gray-600">
               Name
             </label>
             <input
@@ -56,7 +55,7 @@ export default function Contact() {
             />
           </div>
           <div className="relative mb-4">
-            <label for="email" className="leading-7 text-sm text-gray-600">
+            <label htmlFor="email" className="leading-7 text-sm text-gray-600">
               Email
             </label>
             <input
@@ -67,7 +66,7 @@ export default function Contact() {
             />
           </div>
           <div className="relative mb-4">
-            <label for="message" className="leading-7 text-sm text-gray-600">
+            <label htmlFor="message" className="leading-7 text-sm text-gray-600">
               Message
             </label>
             <textarea
@@ -84,7 +83,6 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <MapCard />
     </section>
   );
 }

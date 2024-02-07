@@ -5,10 +5,34 @@ import { useState } from "react";
 import BookingForm from "@/components/BookingForm";
 
 const products = [
-  { id: 1, name: "Product A", price: 10 },
-  { id: 2, name: "Product B", price: 15 },
-  { id: 3, name: "Product C", price: 20 },
-  { id: 4, name: "Product D", price: 25 },
+  {
+    id: 1,
+    name: "Regular Cleaning",
+    price: 10,
+    image: "/unsplash1.jpg",
+    details: "more life",
+  },
+  {
+    id: 2,
+    name: "Deep Cleaning",
+    price: 15,
+    image: "/unsplash2.jpg",
+    details: "more love",
+  },
+  {
+    id: 3,
+    name: "Post Renovation Cleaning",
+    price: 20,
+    image: "/unsplash1.jpg",
+    details: "more trust",
+  },
+  {
+    id: 4,
+    name: "After Party Cleanup",
+    price: 25,
+    image: "/unsplash2.jpg",
+    details: "more joy",
+  },
 ];
 
 export default function Booking() {
@@ -19,16 +43,8 @@ export default function Booking() {
       {/*start booking */}
 
       {/*main booking */}
-      <div className="bg-white p-4 rounded-lg shadow-md">
-        <h2 className="text-xl font-semibold mb-2">Book Your Cleaning</h2>
-        <BookingCard />
+      <div className="bg-white py-4 px-10 rounded-lg shadow-md">
         <BookingForm products={products} />
-        <button
-          className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
-          onClick={() => setIsModalOpen(true)}>
-          Book Now
-        </button>
-        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       </div>
     </>
   );

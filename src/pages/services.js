@@ -1,5 +1,4 @@
 import ServicesAccordion from "@/components/ServicesAccordion";
-import GalleryCarousel from "@/components/gallery";
 import Image from "next/image";
 
 export default function Services() {
@@ -34,20 +33,18 @@ export default function Services() {
         text-gray-900 hidden sm:visible">
             # Service Extras
           </h2>
-<PictureCard />
-
+          <PictureCard />
         </div>
       </section>
     </>
   );
 }
 
-function PictureCard(){
-  return(
+function PictureCard() {
+  return (
     <>
-       <div className="container mx-auto pt-16">
+      <div className="container mx-auto pt-16">
         <div className="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-15 flex flex-wrap">
-          
           <div className="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 xl:pt-10 items-center">
             <Image
               tabindex="0"
@@ -95,5 +92,5 @@ function PictureCard(){
         </div>
       </div>
     </>
-  )
+  );
 }

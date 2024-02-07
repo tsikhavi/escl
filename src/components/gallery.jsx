@@ -5,13 +5,13 @@ export default function GalleryCarousel() {
   return (
     <Carousel className="rounded-xl text-gray-900">
       <div className="relative h-full w-full">
-      <Image
-                  alt="ecommerce"
-                  className="h-full w-full object-cover py-4"
-                  width={120}
-                  height={120}
-                  src="/unsplash2.jpg"
-                />
+        <Image
+          alt="ecommerce"
+          className="h-full w-full object-cover py-4"
+          width={120}
+          height={120}
+          src="/unsplash2.jpg"
+        />
         <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
           <div className="w-3/4 text-center my-4 md:w-2/4">
             <Typography
@@ -41,14 +41,13 @@ export default function GalleryCarousel() {
         </div>
       </div>
       <div className="relative h-full w-full">
-       
         <Image
-                  alt="ecommerce"
-                  className="h-full w-full object-cover py-4"
-                  width={120}
-                  height={120}
-                  src="/unsplash2.jpg"
-                />
+          alt="ecommerce"
+          className="h-full w-full object-cover py-4"
+          width={120}
+          height={120}
+          src="/unsplash2.jpg"
+        />
         <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
           <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32">
             <Typography
@@ -78,13 +77,13 @@ export default function GalleryCarousel() {
         </div>
       </div>
       <div className="relative h-full w-full">
-      <Image
-                  alt="ecommerce"
-                  className="h-full w-full object-cover py-4"
-                  width={120}
-                  height={120}
-                  src="/unsplash2.jpg"
-                />
+        <Image
+          alt="ecommerce"
+          className="h-full w-full object-cover py-4"
+          width={120}
+          height={120}
+          src="/unsplash2.jpg"
+        />
         <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
           <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">
             <Typography

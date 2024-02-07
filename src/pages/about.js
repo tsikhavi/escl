@@ -23,7 +23,6 @@ export default function About() {
                 Esthete Cleaning - Your Trusted Partner for Immaculate Spaces
               </h1>
               <div className="h-1 w-[50%] bg-gray-500 rounded"></div>
-
             </div>
             <p className="lg:w-1/2 w-full text-lg leading-relaxed text-balance">
               At Esthete Cleaning, we&apos;re more than just a cleaning service
@@ -42,7 +41,6 @@ export default function About() {
               </Link>{" "}
             </p>
           </div>
-
 
           <div className="max-w-xl text-lg leading-7 text-gray-700 lg:max-w-lg">
             <h2 className="my-8 text-xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -125,14 +123,11 @@ export default function About() {
               Esthete Cleaning - Where Cleanliness Meets Perfection.
             </blockquote>
           </div>
-
-          
         </div>
       </section>
-     
+
       <Reviews />
       <MapCard />
     </>
   );
 }
-

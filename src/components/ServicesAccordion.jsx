@@ -76,7 +76,7 @@ function AccordionCard() {
             <Image
               width={50}
               height={50}
-              className="h-48 w-full object-cover md:h-full md:w-48"
+              className="rounded-md p-2 object-cover w-full h-[1/2]"
               src="/unsplash1.jpg"
               alt="Modern building architecture"
             />

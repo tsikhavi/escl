@@ -12,7 +12,7 @@ function ActiveLink({ children, href }) {
   // Define the link styles
   const linkStyles = `text-gray-800 font-semibold uppercase transition text-xs hover:text-gray-700/75 ${
     isActive
-      ? "text-red-500 underline underline-offset-10 decoration-4 "
+      ? "text-blue-500 underline underline-offset-10 decoration-4 "
       : "text-black"
   }`;
 
