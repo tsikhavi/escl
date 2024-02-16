@@ -1,88 +1,74 @@
+import Link from "next/link";
+import Reviews from "@/components/Reviews";
+import ContactCard from "@/components/ContactCard";
+import MapContact from "@/components/MapContact";
 
 export default function Contact() {
   return (
-    <section className="text-gray-600 body-font relative">
-      <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            className="absolute inset-0"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96709.90057483074!2d-74.0683570744939!3d40.75796896971022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2ske!4v1707140925063!5m2!1sen!2ske"
-            width="600"
-            height="450"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"></iframe>
-          <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                ADDRESS
-              </h2>
-              <p className="mt-1">
-                Photo booth tattooed prism, portland taiyaki hoodie neutra
-                typewriter
-              </p>
-            </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <a className="text-indigo-500 leading-relaxed">
-                example@email.com
-              </a>
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed">123-456-7890</p>
-            </div>
-          </div>
-        </div>
-        <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-            Feedback
-          </h2>
-          <p className="leading-relaxed mb-5 text-gray-600">
-            Post-ironic portland shabby chic echo park, banjo fashion axe
-          </p>
-          <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-600">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-600">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div className="relative mb-4">
-            <label htmlFor="message" className="leading-7 text-sm text-gray-600">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-          </div>
-          <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            Button
-          </button>
-          <p className="text-xs text-gray-500 mt-3">
-            Chicharrones blog helvetica normcore iceland tousled brook viral
-            artisan.
-          </p>
-        </div>
+    <section className="text-gray-600 font-[Lato] relative px-8">
+      <h1 className="font-bold text-gray-900 tracking-wide text-center uppercase py-8 text-3xl">
+        Contact Us Today
+      </h1>
+      <p className="px-4 w-full text-base leading-relaxed text-justify tracking-tight ">
+        Are you looking for superior cleaning services that suit your specific needs and budget?
+        Look no further than Esthete Cleaning, the leading provider of quality and affordable
+        cleaning solutions in New York and environs. <br />
+        We offer a wide range of cleaning services for residential, commercial, and specialized
+        settings. Whether you need a one-time deep cleaning, a regular maintenance cleaning, or a
+        customized cleaning plan, our experienced and trained team is ready to serve you. We value
+        your time and convenience, so we make it easy for you to reach us and book our services. You
+        can contact us in any of the following ways:
+      </p>
+      <ul className="list-decimal list-inside px-8 py-2 space-y-1">
+        <li>
+          <strong>Whatsapp: </strong> For a quick chat or appointment, you can contact us on
+          Whatsapp by clicking{" "}
+          <Link
+            href="https://wa.me/16465780645"
+            className="opacity-80 transition-opacity hover:opacity-100 text-base font-bold text-green-600 underline underline-offset-2">
+            here
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-4 h-4 inline-flex">
+              <path
+                fillRule="evenodd"
+                d="M15.75 2.25H21a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-1.5 0V4.81L8.03 17.03a.75.75 0 0 1-1.06-1.06L19.19 3.75h-3.44a.75.75 0 0 1 0-1.5Zm-10.5 4.5a1.5 1.5 0 0 0-1.5 1.5v10.5a1.5 1.5 0 0 0 1.5 1.5h10.5a1.5 1.5 0 0 0 1.5-1.5V10.5a.75.75 0 0 1 1.5 0v8.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V8.25a3 3 0 0 1 3-3h8.25a.75.75 0 0 1 0 1.5H5.25Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </Link>
+        </li>
+        <li>
+          <strong>Website: </strong> You can also book our services directly from our website by
+          clicking{" "}
+          <Link
+            href="/book"
+            className="opacity-80 transition-opacity hover:opacity-100 text-base font-bold text-green-600 underline underline-offset-2">
+            here #
+          </Link>
+        </li>
+        <li>
+          <strong>Email: </strong> If you prefer to email us, you can do so by filling out the
+          contact form below. We&apos;ll respond to your email as soon as possible, usually within
+          24 hours.
+        </li>
+      </ul>
+      <br />
+      <p className="px-4 w-full text-base leading-relaxed text-justify tracking-tight">
+        No matter how you choose to contact us, you can expect the same level of professionalism,
+        courtesy, and efficiency from Esthete Cleaning. We are committed to delivering the best
+        cleaning services that exceed your expectations and satisfaction. Don&apos;t wait any
+        longer. Contact us today and let us take care of your cleaning needs. Experience the
+        difference that Esthete Cleaning makes. We look forward to hearing from you!
+      </p>
+
+      <div dir="ltr" className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <MapContact />
+        <ContactCard />
       </div>
+      <Reviews />
     </section>
   );
 }

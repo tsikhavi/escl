@@ -1,28 +1,44 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-function Cta() {
+export default function Cta() {
   return (
-    <div className=" bg-transparent md:container">
-      <div className="pt-10 md:pt-40">
+    <div className=" mx-12 bg-transparent ">
+      <div className="max-w-xl text-center mt-10 ltr:sm:text-left rtl:sm:text-right">
+        <h1 className="text-3xl text-left font-extrabold sm:text-5xl">
+          <strong className="block font-extrabold text-gray-700"> Esthete Cleaning </strong>
+          Best Cleaning Services in New York.
+        </h1>
+
+        <p className="mt-4 max-w-lg text-left sm:text-xl/relaxed">
+          Life&apos;s too short to spend it cleaning! Let Esthete Cleaning whisk away the burden of
+          maintaining your home. Our dedicated team ensures a pristine, sparkling space without you
+          lifting a finger{" "}
+        </p>
+      </div>
+
+      <div className="pt-10 md:pt-40" id="main-road">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center pb-12">
             <div className="md:w-1/2 lg:w-2/3 w-full xl:pr-20 md:pr-6">
-              <div className="py-2 px-20 text-color">
+              <div className="py-2 px-20 ">
                 <h1 className=" lg:text-3xl md:leading-snug tracking-tighter font-bold ">
-                  Esthete Cleaning Best Cleaning Services in New York,
-                  Manhattan.
+                  Esthete Cleaning Best Cleaning Services in New York, Manhattan.
                 </h1>
-                <h2 className="lg:text-2xl lg:leading-7 md:leading-10 f-f-r py-4 md:py-8">
-                  Life&apos;s too short to spend it cleaning! Let Esthete
-                  Cleaning whisk away the burden of maintaining your home. Our
-                  dedicated team ensures a pristine, sparkling space without you
-                  lifting a finger{" "}
+                <h2 className="lg:text-2xl  py-4 md:py-8">
+                  At Esthete Cleaning, we believe your time is precious. Why waste it on mundane
+                  chores when you can enjoy a pristine, sparkling home without lifting a finger? Our
+                  dedicated team of experts is here to whisk away the burden of maintaining your
+                  living space.
                 </h2>
                 <div className="flex items-center cursor-pointer pb-4 md:pb-0">
-                  <h3 className="lg:text-lg font-semibold underline text-gray-700">
+                  <Link
+                    href="/services"
+                    className="lg:text-lg font-semibold hover:underline hover:underline-offset-8 text-gray-700
+                    hover:text-gray-500 ">
                     Check Out Services
-                  </h3>
+                  </Link>
                   <div className="pl-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +48,7 @@ function Cta() {
                       fill="none">
                       <path
                         d="M13.1719 12L8.22192 7.04999L9.63592 5.63599L15.9999 12L9.63592 18.364L8.22192 16.95L13.1719 12Z"
-                        fill="#D53F8C"
+                        fill="currentColor"
                       />
                     </svg>
                   </div>
@@ -70,9 +86,7 @@ function Cta() {
                       </svg>
                     </div>
                     <div className="ml-6">
-                      <h3 className="mb-1 leading-5 text-gray-800 font-bold text-2xl">
-                        2,330
-                      </h3>
+                      <h3 className="mb-1 leading-5 text-gray-800 font-bold text-2xl">2,330</h3>
                       <p className="text-gray-600 text-sm tracking-normal font-normal leading-5">
                         Avg Sales
                       </p>
@@ -125,10 +139,10 @@ function Cta() {
                   Easily manage sales through our invoicing system
                 </h1>
                 <h2 className="text-lg lg:text-3xl leading-7 md:leading-10 f-f-r py-8">
-                  Here at Globex we take special care of what your organization
-                  needs instead of selling you a mass market tool that takes a
-                  one size fits all approach. I personally review each and every
-                  client business and oversee the team that tailores a solution
+                  Here at Globex we take special care of what your organization needs instead of
+                  selling you a mass market tool that takes a one size fits all approach. I
+                  personally review each and every client business and oversee the team that
+                  tailores a solution
                 </h2>
                 <div className="flex items-center cursor-pointer pb-4 md:pb-0">
                   <h3 className="f-f-r text-lg lg:text-2xl font-semibold underline text-gray-700">
@@ -234,5 +248,3 @@ function Cta() {
     </div>
   );
 }
-
-export default Cta;

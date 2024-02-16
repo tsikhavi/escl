@@ -8,9 +8,7 @@ const Modal = ({ isOpen, onClose }) => {
       <div className="bg-white p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold mb-2">Your Cart</h2>
         {/* Cart items */}
-        <button
-          className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
-          onClick={onClose}>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4" onClick={onClose}>
           Close
         </button>
       </div>

@@ -7,7 +7,7 @@ export default function Reviews() {
         <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
           <div className="md:flex md:items-end md:justify-between">
             <div className="max-w-xl">
-              <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 ">
                 Read trusted reviews from our customers
               </h2>
             </div>
@@ -79,15 +79,12 @@ export default function Reviews() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-gray-700 sm:text-3xl">
-                    Regular Cleaning
-                  </p>
+                  <p className="text-xl font-bold text-gray-700 sm:text-3xl">Regular Cleaning</p>
 
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    Scheduling was quick and easy! I was able to book for that
-                    same week. The cleaning was thorough and she stayed an extra
-                    hour to make sure not a single spot was missed. Very polite
-                    and professional. 1000% booking again!
+                    Scheduling was quick and easy! I was able to book for that same week. The
+                    cleaning was thorough and she stayed an extra hour to make sure not a single
+                    spot was missed. Very polite and professional. 1000% booking again!
                   </p>
                 </div>
               </div>
@@ -145,14 +142,11 @@ export default function Reviews() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-gray-700 sm:text-3xl">
-                    Deep Cleaning
-                  </p>
+                  <p className="text-xl font-bold text-gray-700 sm:text-3xl">Deep Cleaning</p>
 
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    Amazing service!! Very professional and trustworthy. I was
-                    very happy with their services and will definitely use their
-                    services again.
+                    Amazing service!! Very professional and trustworthy. I was very happy with their
+                    services and will definitely use their services again.
                   </p>
                 </div>
               </div>
@@ -210,15 +204,13 @@ export default function Reviews() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-gray-700 sm:text-3xl">
-                    Stress Free
-                  </p>
+                  <p className="text-xl font-bold text-gray-700 sm:text-3xl">Stress Free</p>
 
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    I am extremely pleased with Esthete Cleaning Services. They
-                    were very professional, pleasant, and they did a great job
-                    cleaning my place! My cats Babz, sheds a lot and I been a
-                    lot busy. 10/10 recommend it to others.
+                    I am extremely pleased with Esthete Cleaning Services. They were very
+                    professional, pleasant, and they did a great job cleaning my place! My cat Babz,
+                    sheds a lot and I have been a more busy than usual recently. 10/10 recommend it
+                    to others.
                   </p>
                 </div>
               </div>

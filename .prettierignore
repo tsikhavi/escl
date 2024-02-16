@@ -1,3 +1,7 @@
 # Ignore artifacts:
 build
 coverage
+tailwind.config.js
+jsconfig.json
+/.gitignore
+/public

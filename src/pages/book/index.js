@@ -1,150 +1,47 @@
-import Link from "next/link";
-import Image from "next/image";
-import Modal from "@/components/ModalCart";
-import { useState } from "react";
 import BookingForm from "@/components/BookingForm";
 
 const products = [
   {
     id: 1,
     name: "Regular Cleaning",
-    price: 10,
+    price: 35,
     image: "/unsplash1.jpg",
-    details: "more life",
+    details:
+      "Dusting all surfaces, vacuuming carpets and rugs, mopping floors, cleaning and sanitizing bathrooms, wiping down kitchen countertops and appliances, emptying trash bins and replacing liners, general tidying up of rooms",
   },
   {
     id: 2,
     name: "Deep Cleaning",
-    price: 15,
+    price: 45,
     image: "/unsplash2.jpg",
-    details: "more love",
+    details:
+      "Deep dusting every surface including wall art, ceiling fans, vents, baseboards, window sills, and blinds, deep cleaning carpets and rugs, deep cleaning and sanitizing bathrooms including grout cleaning and descaling showerheads and faucets, deep cleaning kitchen including countertops, sinks, and appliances, including the oven and refrigerator interiors, cleaning all windows, both inside and outside where possible, vacuuming and spot cleaning upholstered furniture and cleaning under and behind movable furniture, floor waxing for homes with hardwood or tile",
   },
   {
     id: 3,
     name: "Post Renovation Cleaning",
-    price: 20,
+    price: 40,
     image: "/unsplash1.jpg",
-    details: "more trust",
+    details:
+      "Dusting and vacuuming all surfaces and upholstery, cleaning walls and ceilings, cleaning all fixtures and appliances, cleaning windows and window tracks, removing all renovation debris, mopping the floors",
   },
   {
     id: 4,
     name: "After Party Cleanup",
-    price: 25,
+    price: 50,
     image: "/unsplash2.jpg",
-    details: "more joy",
+    details:
+      "Cleaning and sanitizing all party areas, washing dishes and glassware, cleaning kitchen and bathroom areas, vacuuming and mopping all floors, removing party decorations, disposing of all trash",
   },
 ];
 
 export default function Booking() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <>
-      {/*start booking */}
-
       {/*main booking */}
       <div className="bg-white py-4 px-10 rounded-lg shadow-md">
         <BookingForm products={products} />
       </div>
     </>
-  );
-}
-
-function BookingCard() {
-  return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap -m-4">
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <Link
-              href="/"
-              className="block relative h-48 rounded overflow-hidden">
-              <Image
-                alt="ecommerce"
-                className="object-cover object-center w-full h-full block"
-                width={120}
-                height={120}
-                src="/unsplash2.jpg"
-              />
-            </Link>
-            <div className="mt-4">
-              <h3 className="text-gray-500 uppercase text-xs tracking-widest title-font mb-1">
-                Regular Cleaning
-              </h3>
-              <h2 className="text-gray-900 title-font text-lg font-medium">
-                The Catalyzer
-              </h2>
-              <p className="mt-1">.00</p>
-            </div>
-          </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <Link
-              href="/"
-              className="block relative h-48 rounded overflow-hidden">
-              <Image
-                alt="ecommerce"
-                className="object-cover object-center w-full h-full block"
-                width={120}
-                height={120}
-                src="/unsplash2.jpg"
-              />
-            </Link>
-            <div className="mt-4">
-              <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 className="text-gray-900 title-font text-lg font-medium">
-                Shooting Stars
-              </h2>
-              <p className="mt-1">.15</p>
-            </div>
-          </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <Link
-              href="/"
-              className="block relative h-48 rounded overflow-hidden">
-              <Image
-                alt="ecommerce"
-                className="object-cover object-center w-full h-full block"
-                width={120}
-                height={120}
-                src="/unsplash2.jpg"
-              />
-            </Link>
-            <div className="mt-4">
-              <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 className="text-gray-900 title-font text-lg font-medium">
-                Neptune
-              </h2>
-              <p className="mt-1">.00</p>
-            </div>
-          </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-            <Link
-              href="/"
-              className="block relative h-48 rounded overflow-hidden">
-              <Image
-                alt="ecommerce"
-                className="object-cover object-center w-full h-full block"
-                width={120}
-                height={120}
-                src="/unsplash2.jpg"
-              />
-            </Link>
-            <div className="mt-4">
-              <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                CATEGORY
-              </h3>
-              <h2 className="text-gray-900 title-font text-lg font-medium">
-                The 400 Blows
-              </h2>
-              <p className="mt-1">.40</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }

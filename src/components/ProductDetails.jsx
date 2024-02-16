@@ -4,11 +4,10 @@ const ProductDetails = ({ product }) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="p-4">
-      <p>
-        This is a short paragraph.
-        {showDetails &&
-          " This is more detailed information that is initially hidden."}
+    <div className="p-4 ">
+      <p className="">
+        {product.name} - ${product.price}/hr
+        {showDetails && ` - ${product.details}`}
       </p>
       <button
         className="mt-2 text-blue-500 hover:text-blue-700"

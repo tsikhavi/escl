@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const CartItem = ({ item, onRemoveFromCart }) => {
@@ -5,9 +6,11 @@ const CartItem = ({ item, onRemoveFromCart }) => {
     <div className="border text-sm p-4 mb-4">
       <h3>{item.name}</h3>
       {item.image && (
-        <img
+        <Image
           src={item.image}
           alt={item.name}
+          width={40}
+          height={40}
           className="rounded-full w-10 h-10 flex float-right"
         />
       )}

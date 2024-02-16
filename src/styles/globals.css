@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,12 +11,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
+  font-family: "Lato", system-ui, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 @layer utilities {
@@ -27,21 +26,30 @@ body {
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
-  scrollbar-width: auto;
-  scrollbar-color: #ababab #ffffff;
+  scrollbar-width: thin;
+  scrollbar-color: #757575 #efecec;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 16px;
+  width: 8px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #efecec;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #ababab;
+  background-color: #757575;
   border-radius: 10px;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.ellipse {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+
+  /* Setting Border Radius */
+  border-radius: 50%;
 }
