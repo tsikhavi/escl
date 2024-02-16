@@ -1,11 +1,28 @@
 import BookButton from "@/components/BookButton";
 import PriceCalculator from "@/components/PriceCalculator";
 import PriceCard from "@/components/PriceCard";
+import Banner from "@/components/banner";
 
 export default function Pricing() {
   return (
     <>
-      <section className="">
+    <Banner path="/pricing#top">
+        Our Services
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6 animate-bounce inline-flex text-white">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          />
+        </svg>
+      </Banner>
+      <section className="" id="top">
         <div className="mx-auto max-w-screen-2xl px-4 py-20 sm:px-6 lg:px-8 grid grid-cols-2 gap-4">
           {/*pricing calculator */}
           <div className="mx-auto pb-10 gap-8 ">

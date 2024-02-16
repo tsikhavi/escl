@@ -2,10 +2,26 @@ import Reviews from "@/components/Reviews";
 import Image from "next/image";
 import Link from "next/link";
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from "@heroicons/react/20/solid";
+import Banner from "@/components/banner";
 
 export default function About() {
   return (
     <>
+    <Banner path="/#main-road">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6 animate-bounce text-white">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          />
+        </svg>
+      </Banner>
       <section className="text-gray-600 body-font text-base">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20">

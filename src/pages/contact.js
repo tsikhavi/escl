@@ -2,10 +2,28 @@ import Link from "next/link";
 import Reviews from "@/components/Reviews";
 import ContactCard from "@/components/ContactCard";
 import MapContact from "@/components/MapContact";
+import Banner from "@/components/banner";
 
 export default function Contact() {
   return (
-    <section className="text-gray-600 font-[Lato] relative px-8">
+    <>
+    <Banner path="/contact#contactUs">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6 animate-bounce text-white">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          />
+        </svg>
+      </Banner>
+    
+    <section className="text-gray-600 font-[Lato] relative px-8" id="contactUs" >
       <h1 className="font-bold text-gray-900 tracking-wide text-center uppercase py-8 text-3xl">
         Contact Us Today
       </h1>
@@ -70,5 +88,6 @@ export default function Contact() {
       </div>
       <Reviews />
     </section>
+    </>
   );
 }

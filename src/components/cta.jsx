@@ -136,19 +136,20 @@ export default function Cta() {
             <div className="md:w-1/2 lg:w-2/3 w-full lg:pl-20 md:pl-10 sm:pl-0 pl-0">
               <div className="py-2 text-color">
                 <h1 className="text-2xl lg:text-6xl tracking-tighter md:leading-snug f-f-l font-black">
-                  Easily manage sales through our invoicing system
+                  Easily manage cleaning through our system
                 </h1>
-                <h2 className="text-lg lg:text-3xl leading-7 md:leading-10 f-f-r py-8">
-                  Here at Globex we take special care of what your organization needs instead of
-                  selling you a mass market tool that takes a one size fits all approach. I
-                  personally review each and every client business and oversee the team that
-                  tailores a solution
+                <h2 className="lg:text-2xl  py-4 md:py-8  leading-7 md:leading-10 f-f-r ">
+                At Esthete Cleaning, we believe your time is precious. Why waste it on mundane
+                  chores when you can enjoy a pristine, sparkling home without lifting a finger? Our
+                  dedicated team of experts is here to whisk away the burden of maintaining your
+                  living space.
                 </h2>
                 <div className="flex items-center cursor-pointer pb-4 md:pb-0">
-                  <h3 className="f-f-r text-lg lg:text-2xl font-semibold underline text-gray-700">
+                  <Link href="/book" className="lg:text-lg font-semibold hover:underline hover:underline-offset-8 text-gray-700
+                    hover:text-gray-500 f-f-r text-lg  underline ">
                     Lets Get Started
-                  </h3>
-                  <div className="pl-2">
+                  
+                  <span className="pl-2 inline-flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={24}
@@ -160,7 +161,9 @@ export default function Cta() {
                         fill="#D53F8C"
                       />
                     </svg>
-                  </div>
+                    
+                  </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -174,10 +177,10 @@ export default function Cta() {
               />
               <div className="relative z-10 p-4 bg-white shadow rounded mx-auto w-9/12 -mb-20">
                 <h4 className="text-gray-800 font-normal text-md leading-4 tracking-normal mb-2">
-                  Invoice # 35RD87
+                  Esthete Cleaning
                 </h4>
                 <p className="text-gray-600 text-xs leading-3 font-normal">
-                  Assigned to: Josh Rollins
+                  Assigned to: Anastasia McKay
                 </p>
                 <div className="mt-4 flex items-center">
                   <span className="text-gray-600">
@@ -197,7 +200,7 @@ export default function Cta() {
                     </svg>
                   </span>
                   <p className="ml-1 text-sm text-gray-800 leading-3 tracking-normal font-normal">
-                    Specter Consultancy
+                    Specter Construction
                   </p>
                 </div>
                 <div className="mt-3 flex items-center">
@@ -218,11 +221,11 @@ export default function Cta() {
                     </svg>
                   </span>
                   <p className="ml-1 text-sm text-gray-800 leading-3 tracking-normal font-normal">
-                    2,354 USD
+                    754 USD
                   </p>
                 </div>
                 <button className="relative focus:outline-none mt-4 py-2 pr-10 bg-gray-700 text-white tracking-normal text-xs pl-3 cursor-pointer hover:opacity-90">
-                  View Invoice
+                  View Service
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="absolute inset-0 m-auto mr-3 icon icon-table icon-table-arrow-right"

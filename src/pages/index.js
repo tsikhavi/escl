@@ -20,7 +20,7 @@ export default function Home() {
           />
         </svg>
       </Banner>
-      <main className="flex min-h-screen  flex-col items-center justify-between px-0 py-0 ">
+      <main className="flex min-h-screen  flex-col items-center justify-between mx-10 py-0 ">
         <Cta />
 
         <Faqs />
