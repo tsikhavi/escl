@@ -4,21 +4,21 @@ import Link from "next/link";
 
 export default function Cta() {
   return (
-    <div className=" mx-12 bg-transparent ">
+    <div className=" mx-12 bg-transparent py-60 " id="main-road">
       <div className="max-w-xl text-center mt-10 ltr:sm:text-left rtl:sm:text-right">
         <h1 className="text-3xl text-left font-extrabold sm:text-5xl">
           <strong className="block font-extrabold text-gray-700"> Esthete Cleaning </strong>
           Best Cleaning Services in New York.
         </h1>
 
-        <p className="mt-4 max-w-lg text-left sm:text-xl/relaxed">
+        <p className="mt-4 max-w-lg text-left text-xl relaxed">
           Life&apos;s too short to spend it cleaning! Let Esthete Cleaning whisk away the burden of
           maintaining your home. Our dedicated team ensures a pristine, sparkling space without you
           lifting a finger{" "}
         </p>
       </div>
 
-      <div className="pt-10 md:pt-40" id="main-road">
+      <div className="pt-10 md:pt-40" >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center pb-12">
             <div className="md:w-1/2 lg:w-2/3 w-full xl:pr-20 md:pr-6">
@@ -26,24 +26,24 @@ export default function Cta() {
                 <h1 className=" lg:text-3xl md:leading-snug tracking-tighter font-bold ">
                   Esthete Cleaning Best Cleaning Services in New York, Manhattan.
                 </h1>
-                <h2 className="lg:text-2xl  py-4 md:py-8">
+                <p className="text-xl py-4 md:py-8 leading-relaxed">
                   At Esthete Cleaning, we believe your time is precious. Why waste it on mundane
                   chores when you can enjoy a pristine, sparkling home without lifting a finger? Our
                   dedicated team of experts is here to whisk away the burden of maintaining your
                   living space.
-                </h2>
+                </p>
                 <div className="flex items-center cursor-pointer pb-4 md:pb-0">
                   <Link
                     href="/services"
-                    className="lg:text-lg font-semibold hover:underline hover:underline-offset-8 text-gray-700
-                    hover:text-gray-500 ">
+                    className="lg:text-lg font-semibold underline underline-offset-4 hover:underline hover:underline-offset-8 text-gray-700
+                    hover:text-gray-600 ">
                     Check Out Services
-                  </Link>
-                  <div className="pl-2">
+                  
+                  <span className="pl-2 inline-flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
+                      width={16}
+                      height={16}
                       viewBox="0 0 24 24"
                       fill="none">
                       <path
@@ -51,7 +51,8 @@ export default function Cta() {
                         fill="currentColor"
                       />
                     </svg>
-                  </div>
+                  </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -135,30 +136,30 @@ export default function Cta() {
           <div className="flex flex-wrap flex-row-reverse items-center">
             <div className="md:w-1/2 lg:w-2/3 w-full lg:pl-20 md:pl-10 sm:pl-0 pl-0">
               <div className="py-2 text-color">
-                <h1 className="text-2xl lg:text-6xl tracking-tighter md:leading-snug f-f-l font-black">
+                <h1 className="lg:text-3xl md:leading-snug tracking-tighter font-bold">
                   Easily manage cleaning through our system
                 </h1>
-                <h2 className="lg:text-2xl  py-4 md:py-8  leading-7 md:leading-10 f-f-r ">
+                <p className="text-xl py-4 md:py-8 leading-relaxed ">
                 At Esthete Cleaning, we believe your time is precious. Why waste it on mundane
                   chores when you can enjoy a pristine, sparkling home without lifting a finger? Our
                   dedicated team of experts is here to whisk away the burden of maintaining your
                   living space.
-                </h2>
+                </p>
                 <div className="flex items-center cursor-pointer pb-4 md:pb-0">
-                  <Link href="/book" className="lg:text-lg font-semibold hover:underline hover:underline-offset-8 text-gray-700
-                    hover:text-gray-500 f-f-r text-lg  underline ">
+                  <Link href="/book" className="lg:text-lg font-semibold underline underline-offset-4 hover:underline hover:underline-offset-8 text-gray-700
+                    hover:text-gray-600 ">
                     Lets Get Started
                   
                   <span className="pl-2 inline-flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
+                      width={16}
+                      height={16}
                       viewBox="0 0 24 24"
                       fill="none">
                       <path
                         d="M13.1719 12L8.22192 7.04999L9.63592 5.63599L15.9999 12L9.63592 18.364L8.22192 16.95L13.1719 12Z"
-                        fill="#D53F8C"
+                        fill="currentColor"
                       />
                     </svg>
                     

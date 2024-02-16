@@ -7,7 +7,7 @@ export default function Pricing() {
   return (
     <>
     <Banner path="/pricing#top">
-        Our Services
+        Price Calculator
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

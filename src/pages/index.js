@@ -6,13 +6,14 @@ export default function Home() {
   return (
     <>
       <Banner path="/#main-road">
+        Welcome To Esthete Cleaning Services 
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6 animate-bounce text-white">
+          className="w-6 h-6 animate-bounce inline-flex text-white">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -21,9 +22,11 @@ export default function Home() {
         </svg>
       </Banner>
       <main className="flex min-h-screen  flex-col items-center justify-between mx-10 py-0 ">
+        <div className="my-60">
         <Cta />
 
         <Faqs />
+        </div>
       </main>
     </>
   );

@@ -8,8 +8,14 @@ const Banner = ({ path, children }) => {
     switch (router.pathname) {
       case "/":
         return "url(/unsplash1.jpg)";
-      case "/services":
+      case "/about":
         return "url(/unsplash1.jpg)";
+      case "/contact":
+        return "url(/unsplash1.jpg)";
+        case "/services":
+          return "url(/unsplash1.jpg)";
+          case "/pricing":
+            return "url(/unsplash1.jpg)";
       // Add more paths as needed
       default:
         return "url(/unsplash1.jpg)";

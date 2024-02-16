@@ -7,14 +7,15 @@ import Banner from "@/components/banner";
 export default function About() {
   return (
     <>
-    <Banner path="/#main-road">
+    <Banner path="/about#aboutUs">
+      About Us
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6 animate-bounce text-white">
+          className="w-6 h-6 animate-bounce inline-flex text-white">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -22,8 +23,8 @@ export default function About() {
           />
         </svg>
       </Banner>
-      <section className="text-gray-600 body-font text-base">
-        <div className="container px-5 py-24 mx-auto">
+      <section className="text-gray-600 body-font text-base mx-10" id="aboutUs">
+        <div className="container px-5 py-60 mx-auto">
           <div className="flex flex-wrap w-full mb-20">
             <div className="w-full mb-6  lg:mb-0">
               <p className="text-base text-center flex title-font uppercase mb-4 text-gray-900 font-semibold leading-7 ">

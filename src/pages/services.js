@@ -24,7 +24,7 @@ export default function Services() {
         </svg>
       </Banner>
 
-      <section id="topservices" className="my-190 relative mx-0">
+      <section id="topservices" className="my-190  mx-0">
         <div className="py-60 grid sm:grid-cols-2 grid-cols-1 gap-4">
           <p
             className="text-left sm:text-center px-4 tracking-wide uppercase text-xl font-semibold
