@@ -6,7 +6,7 @@ import Banner from "@/components/banner";
 export default function Pricing() {
   return (
     <>
-    <Banner path="/pricing#top">
+      <Banner path="/pricing#top">
         Price Calculator
         <svg
           xmlns="http://www.w3.org/2000/svg"

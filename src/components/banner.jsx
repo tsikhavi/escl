@@ -7,18 +7,18 @@ const Banner = ({ path, children }) => {
   const getBackgroundImage = () => {
     switch (router.pathname) {
       case "/":
-        return "url(/unsplash1.jpg)";
+        return "url(./unsplash1.jpg)";
       case "/about":
         return "url(/unsplash1.jpg)";
       case "/contact":
         return "url(/unsplash1.jpg)";
-        case "/services":
-          return "url(/unsplash1.jpg)";
-          case "/pricing":
-            return "url(/unsplash1.jpg)";
+      case "/services":
+        return "url(/unsplash1.jpg)";
+      case "/pricing":
+        return "url(/unsplash1.jpg)";
       // Add more paths as needed
       default:
-        return "url(/unsplash1.jpg)";
+        return "url(./unsplash1.jpg)";
     }
   };
 

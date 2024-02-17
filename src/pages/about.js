@@ -7,8 +7,8 @@ import Banner from "@/components/banner";
 export default function About() {
   return (
     <>
-    <Banner path="/about#aboutUs">
-      About Us
+      <Banner path="/about#aboutUs">
+        About Us
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

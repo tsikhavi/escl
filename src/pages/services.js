@@ -42,7 +42,9 @@ export default function Services() {
             <ServicesAccordion />
             <p className="text-base tracking-tight font-semibold py-12 text-balance leading-8 ">
               Remember, our cleaning services are customizable to meet your specific needs.{" "}
-              <Link className="underline hover:underline-offset-8 bg-none hover:bg-blue-gray-200" href="/contact">
+              <Link
+                className="underline hover:underline-offset-8 bg-none hover:bg-blue-gray-200"
+                href="/contact">
                 Contact us today
                 <span>
                   <svg
@@ -151,7 +153,6 @@ export default function Services() {
           <hr className="border-1 border-gray-500 w-full mx-20 my-20" />
           <Reviews />
         </div>
-       
       </section>
     </>
   );

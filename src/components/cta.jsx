@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ListComponent from "./ListComponent";
 
 export default function Cta() {
   return (
-    <div className=" mx-12 bg-transparent py-60 " id="main-road">
+    <div className=" mx-12 bg-transparent pt-60 pb-4 " id="main-road">
       <div className="max-w-xl text-center mt-10 ltr:sm:text-left rtl:sm:text-right">
         <h1 className="text-3xl text-left font-extrabold sm:text-5xl">
           <strong className="block font-extrabold text-gray-700"> Esthete Cleaning </strong>
@@ -18,15 +19,15 @@ export default function Cta() {
         </p>
       </div>
 
-      <div className="pt-10 md:pt-40" >
+      <div className="pt-10 md:pt-40">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center pb-12">
             <div className="md:w-1/2 lg:w-2/3 w-full xl:pr-20 md:pr-6">
-              <div className="py-2 px-20 ">
+              <div className="py-2 px-10 ">
                 <h1 className=" lg:text-3xl md:leading-snug tracking-tighter font-bold ">
                   Esthete Cleaning Best Cleaning Services in New York, Manhattan.
                 </h1>
-                <p className="text-xl py-4 md:py-8 leading-relaxed">
+                <p className="text-xl py-4 md:py-8 leading-relaxed text-justify">
                   At Esthete Cleaning, we believe your time is precious. Why waste it on mundane
                   chores when you can enjoy a pristine, sparkling home without lifting a finger? Our
                   dedicated team of experts is here to whisk away the burden of maintaining your
@@ -38,20 +39,19 @@ export default function Cta() {
                     className="lg:text-lg font-semibold underline underline-offset-4 hover:underline hover:underline-offset-8 text-gray-700
                     hover:text-gray-600 ">
                     Check Out Services
-                  
-                  <span className="pl-2 inline-flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={16}
-                      height={16}
-                      viewBox="0 0 24 24"
-                      fill="none">
-                      <path
-                        d="M13.1719 12L8.22192 7.04999L9.63592 5.63599L15.9999 12L9.63592 18.364L8.22192 16.95L13.1719 12Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </span>
+                    <span className="pl-2 inline-flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={16}
+                        height={16}
+                        viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                          d="M13.1719 12L8.22192 7.04999L9.63592 5.63599L15.9999 12L9.63592 18.364L8.22192 16.95L13.1719 12Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -63,70 +63,8 @@ export default function Cta() {
                 width={200}
                 height={200}
                 alt="service2"
+                title="service2"
               />
-              <div className="relative z-10 bg-white rounded shadow p-6 w-10/12 -mb-20">
-                <div className="flex items-center justify-between w-full sm:w-full mb-8">
-                  <div className="flex items-center">
-                    <div className="p-4 bg-yellow-200 rounded-md">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="icon icon-tabler icon-tabler-discount"
-                        width={32}
-                        height={32}
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <line x1={9} y1={15} x2={15} y2={9} />
-                        <circle cx="9.5" cy="9.5" r=".5" />
-                        <circle cx="14.5" cy="14.5" r=".5" />
-                        <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7a2.2 2.2 0 0 0 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1a2.2 2.2 0 0 0 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55 v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55 v-1" />
-                      </svg>
-                    </div>
-                    <div className="ml-6">
-                      <h3 className="mb-1 leading-5 text-gray-800 font-bold text-2xl">2,330</h3>
-                      <p className="text-gray-600 text-sm tracking-normal font-normal leading-5">
-                        Avg Sales
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex items-center pl-3 text-green-400">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="icon icon-tabler icon-tabler-trending-up"
-                        width={24}
-                        height={24}
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <polyline points="3 17 9 11 13 15 21 7" />
-                        <polyline points="14 7 21 7 21 14" />
-                      </svg>
-                      <p className="text-green-400 text-xs tracking-wide font-bold leading-normal pl-1">
-                        7.2%
-                      </p>
-                    </div>
-                    <p className="font-normal text-xs text-right leading-4 text-green-400 tracking-normal">
-                      Increase
-                    </p>
-                  </div>
-                </div>
-                <div className="relative mb-3">
-                  <hr className="h-1 rounded-sm bg-gray-200" />
-                  <hr className="absolute top-0 h-1 w-7/12 rounded-sm bg-gray-700" />
-                </div>
-                <h4 className="text-base text-gray-600 font-normal tracking-normal leading-5">
-                  Yearly Goal
-                </h4>
-              </div>
             </div>
           </div>
         </div>
@@ -135,35 +73,45 @@ export default function Cta() {
         <div className="mx-auto">
           <div className="flex flex-wrap flex-row-reverse items-center">
             <div className="md:w-1/2 lg:w-2/3 w-full lg:pl-20 md:pl-10 sm:pl-0 pl-0">
-              <div className="py-2 text-color">
+              <div className="py-2 px-10 ">
                 <h1 className="lg:text-3xl md:leading-snug tracking-tighter font-bold">
                   Easily manage cleaning through our system
                 </h1>
-                <p className="text-xl py-4 md:py-8 leading-relaxed ">
-                At Esthete Cleaning, we believe your time is precious. Why waste it on mundane
-                  chores when you can enjoy a pristine, sparkling home without lifting a finger? Our
-                  dedicated team of experts is here to whisk away the burden of maintaining your
-                  living space.
+                <p className="text-xl py-4 md:py-8 leading-relaxed text-justify ">
+                  Whether you need a one-time deep cleaning, a regular maintenance cleaning,
+                  post-renovation cleaning, or an after-party cleanup we have you covered. We offer
+                  flexible and affordable packages that suit your needs and budget. We also use
+                  eco-friendly products and equipment that are safe for your family and the
+                  environment.
                 </p>
-                <div className="flex items-center cursor-pointer pb-4 md:pb-0">
-                  <Link href="/book" className="lg:text-lg font-semibold underline underline-offset-4 hover:underline hover:underline-offset-8 text-gray-700
+                <p className="text-xl py-4 leading-relaxed ">
+                  With Esthete Cleaning, you can expect:
+                </p>
+                
+                <ListComponent />
+                <p className="text-xl py-4 leading-relaxed ">
+                  Don&apos;t settle for anything less than a spotless home. Book your cleaning service
+                  today and get ready to enjoy a cleaner, healthier, and happier living space.
+                </p>
+                <div className="flex items-center cursor-pointer py-4 ">
+                  <Link
+                    href="/book"
+                    className="lg:text-lg font-semibold underline underline-offset-4 hover:underline hover:underline-offset-8 text-gray-700
                     hover:text-gray-600 ">
                     Lets Get Started
-                  
-                  <span className="pl-2 inline-flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={16}
-                      height={16}
-                      viewBox="0 0 24 24"
-                      fill="none">
-                      <path
-                        d="M13.1719 12L8.22192 7.04999L9.63592 5.63599L15.9999 12L9.63592 18.364L8.22192 16.95L13.1719 12Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                    
-                  </span>
+                    <span className="pl-2 inline-flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={16}
+                        height={16}
+                        viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                          d="M13.1719 12L8.22192 7.04999L9.63592 5.63599L15.9999 12L9.63592 18.364L8.22192 16.95L13.1719 12Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -176,75 +124,7 @@ export default function Cta() {
                 height={200}
                 alt="service1"
               />
-              <div className="relative z-10 p-4 bg-white shadow rounded mx-auto w-9/12 -mb-20">
-                <h4 className="text-gray-800 font-normal text-md leading-4 tracking-normal mb-2">
-                  Esthete Cleaning
-                </h4>
-                <p className="text-gray-600 text-xs leading-3 font-normal">
-                  Assigned to: Anastasia McKay
-                </p>
-                <div className="mt-4 flex items-center">
-                  <span className="text-gray-600">
-                    <svg
-                      className="feather feather-user"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={16}
-                      height={16}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round">
-                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                      <circle cx={12} cy={7} r={4} />
-                    </svg>
-                  </span>
-                  <p className="ml-1 text-sm text-gray-800 leading-3 tracking-normal font-normal">
-                    Specter Construction
-                  </p>
-                </div>
-                <div className="mt-3 flex items-center">
-                  <span className="text-gray-600">
-                    <svg
-                      className="feather feather-dollar-sign"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={16}
-                      height={16}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round">
-                      <line x1={12} y1={1} x2={12} y2={23} />
-                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                    </svg>
-                  </span>
-                  <p className="ml-1 text-sm text-gray-800 leading-3 tracking-normal font-normal">
-                    754 USD
-                  </p>
-                </div>
-                <button className="relative focus:outline-none mt-4 py-2 pr-10 bg-gray-700 text-white tracking-normal text-xs pl-3 cursor-pointer hover:opacity-90">
-                  View Service
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="absolute inset-0 m-auto mr-3 icon icon-table icon-table-arrow-right"
-                    width={16}
-                    height={16}
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <line x1={5} y1={12} x2={19} y2={12} />
-                    <line x1={13} y1={18} x2={19} y2={12} />
-                    <line x1={13} y1={6} x2={19} y2={12} />
-                  </svg>
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>

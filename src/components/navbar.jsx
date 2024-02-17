@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="bg-gradient-to-br from-inherit z-50 flow-root py-20 fixed w-screen px-10">
+      <header className="bg-gradient-to-br from-inherit z-50 flow-root py-12 fixed w-screen px-10">
         <div className="mx-2 flex h-16  items-center  ">
           {/* Logo */}
           <Link href="/" className="block text-black">
