@@ -74,13 +74,20 @@ function GalleryCarousel() {
         />
         <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
           <div className="w-3/4 text-center my-4 md:w-2/4">
-            <Typography variant="h4" color="white" className="mb-4 text-xl md:text-4xl lg:text-5xl">
+            <Typography
+              variant="h4"
+              color="white"
+              className="mb-4 text-xl md:text-4xl lg:text-5xl">
               The Beauty of Nature
             </Typography>
-            <Typography variant="lead" color="white" className="mb-12 text-xs opacity-80">
-              It is not so much for its beauty that the forest makes a claim upon men&apos;s hearts,
-              as for that subtle something, that quality of air that emanation from old trees, that
-              so wonderfully changes and renews a weary spirit.
+            <Typography
+              variant="lead"
+              color="white"
+              className="mb-12 text-xs opacity-80">
+              It is not so much for its beauty that the forest makes a claim
+              upon men&apos;s hearts, as for that subtle something, that quality
+              of air that emanation from old trees, that so wonderfully changes
+              and renews a weary spirit.
             </Typography>
             <div className="flex justify-center gap-2">
               <Button size="lg" color="gray">
@@ -109,10 +116,14 @@ function GalleryCarousel() {
               className="mb-4 text-3xl text-gray-800 bg-gray-100 md:text-4xl lg:text-5xl">
               The Beauty of Nature
             </Typography>
-            <Typography variant="lead" color="gray" className="mb-12 opacity-80">
-              It is not so much for its beauty that the forest makes a claim upon men&apos;s hearts,
-              as for that subtle something, that quality of air that emanation from old trees, that
-              so wonderfully changes and renews a weary spirit.
+            <Typography
+              variant="lead"
+              color="gray"
+              className="mb-12 opacity-80">
+              It is not so much for its beauty that the forest makes a claim
+              upon men&apos;s hearts, as for that subtle something, that quality
+              of air that emanation from old trees, that so wonderfully changes
+              and renews a weary spirit.
             </Typography>
             <div className="flex gap-2">
               <Button size="lg" color="white">
@@ -141,10 +152,14 @@ function GalleryCarousel() {
               className="mb-4 text-3xl md:text-4xl lg:text-5xl">
               The Beauty of Nature
             </Typography>
-            <Typography variant="lead" color="white" className="mb-12 opacity-80">
-              It is not so much for its beauty that the forest makes a claim upon men&apos;s hearts,
-              as for that subtle something, that quality of air that emanation from old trees, that
-              so wonderfully changes and renews a weary spirit.
+            <Typography
+              variant="lead"
+              color="white"
+              className="mb-12 opacity-80">
+              It is not so much for its beauty that the forest makes a claim
+              upon men&apos;s hearts, as for that subtle something, that quality
+              of air that emanation from old trees, that so wonderfully changes
+              and renews a weary spirit.
             </Typography>
             <div className="flex gap-2">
               <Button size="lg" color="white">

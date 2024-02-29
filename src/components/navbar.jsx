@@ -28,7 +28,7 @@ export default function Navbar() {
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-xs">
                 <li>
-                  <ActiveLink href="/" className="">
+                  <ActiveLink href="/landing" className="">
                     Home
                   </ActiveLink>
                 </li>

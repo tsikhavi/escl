@@ -1,28 +1,39 @@
 import ServicesAccordion from "@/components/ServicesAccordion";
 import Image from "next/image";
-import Banner from "@/components/banner";
 import Link from "next/link";
 import Reviews from "@/components/Reviews";
+import { useRouter } from "next/router";
 
 export default function Services() {
+  const router = useRouter();
+  const path = "/contact#contactUs";
   return (
     <>
-      <Banner path="/services#topservices">
-        Our Services
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6 animate-bounce inline-flex text-white">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-          />
-        </svg>
-      </Banner>
+      <section className="w-screen min-h-96 bg-fixed z-10 BackgroundImageServices bg-cover bg-center bg-no-repeat">
+        <div className="w-full h-screen bg-gradient-to-tr from-white ">
+          <div className="flex justify-center pt-96 overflow-hidden">
+            <button
+              type="button"
+              onClick={() => router.push(path)}
+              className="bg-black text-white p-2 rounded-full">
+              Contact Us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 animate-bounce inline-flex text-white">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
 
       <section id="topservices" className="my-190  mx-0">
         <div className="py-60 grid sm:grid-cols-2 grid-cols-1 gap-4">
@@ -38,10 +49,13 @@ export default function Services() {
               Esthete Cleaning Services
             </h1>
           </div>
-          <div className="w-full flex-grow border-none px-0 border-gray-300 pb-4">
+          <div
+            className="w-full flex-grow border-none px-0 border-gray-300 pb-4"
+            id="faqServices">
             <ServicesAccordion />
             <p className="text-base tracking-tight font-semibold py-12 text-balance leading-8 ">
-              Remember, our cleaning services are customizable to meet your specific needs.{" "}
+              Remember, our cleaning services are customizable to meet your
+              specific needs.{" "}
               <Link
                 className="underline hover:underline-offset-8 bg-none hover:bg-blue-gray-200"
                 href="/contact">
@@ -61,7 +75,9 @@ export default function Services() {
                 </span>
               </Link>{" "}
               to schedule your next cleaning service!{" "}
-              <Link className="underline hover:underline-offset-8" href="/services#extraServices">
+              <Link
+                className="underline hover:underline-offset-8"
+                href="/services#extraServices">
                 Check our extra services below.
                 <span>
                   <svg
@@ -92,7 +108,7 @@ export default function Services() {
         text-gray-900 hidden sm:visible">
             # Service Extras
           </h2>
-          <div className="grid grid-cols-3 gap-8 mx-20 w-full  justify-stretch" id="extraServices">
+          <div className="grid grid-cols-3 gap-8 mx-20 w-full  justify-stretch">
             <Carousel
               imgSrc="/unsplash2.jpg"
               altText="Dish Washing"
@@ -158,7 +174,15 @@ export default function Services() {
   );
 }
 
-const Carousel = ({ imgSrc, altText, title, description, extra, bookingLink, rateExtra }) => {
+const Carousel = ({
+  imgSrc,
+  altText,
+  title,
+  description,
+  extra,
+  bookingLink,
+  rateExtra,
+}) => {
   return (
     <div className="group relative my-10 h-96 w-96 overflow-hidden rounded-lg shadow-md">
       <div className="absolute px-8 top-0 h-full w-full transition-all duration-300 ease-in-out group-hover:-top-96">
@@ -172,7 +196,9 @@ const Carousel = ({ imgSrc, altText, title, description, extra, bookingLink, rat
         <h1 className="mt-4 px-4 text-center font-serif text-xl font-semibold text-rose-500">
           {title}
         </h1>
-        <p className="mt-1 px-4 text-base text-left text-gray-600">{description}</p>
+        <p className="mt-1 px-4 text-base text-left text-gray-600">
+          {description}
+        </p>
       </div>
 
       <div className="absolute left-0 -bottom-96 flex h-full w-full flex-col justify-center transition-all duration-300 ease-in-out group-hover:bottom-0">

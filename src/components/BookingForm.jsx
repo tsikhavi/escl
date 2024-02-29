@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import ProductItem from "./ProductItem";
 import CartItem from "./CartItem";
-import ModalItems from "./Modal";
+import CheckoutButton from "./Modal";
 
 const BookingForm = ({ products }) => {
   const [cart, setCart] = useState([]);
@@ -33,7 +33,9 @@ const BookingForm = ({ products }) => {
 
   return (
     <>
-      <h1 className="text-xl text-center py-8 font-semibold uppercase">Booking Form</h1>
+      <h1 className="text-xl text-center py-8 font-semibold uppercase">
+        Booking Form
+      </h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="flex gap-4">
           <div className="w-1/2 border-e-2 px-4 shadow-xl rounded-md text-xs text-gray-700 text-balance">
@@ -41,7 +43,11 @@ const BookingForm = ({ products }) => {
               Available Products
             </h3>
             {products.map((product) => (
-              <ProductItem key={product.id} product={product} onAddToCart={addToCart} />
+              <ProductItem
+                key={product.id}
+                product={product}
+                onAddToCart={addToCart}
+              />
             ))}
           </div>
 
@@ -50,11 +56,15 @@ const BookingForm = ({ products }) => {
               Your Cart
             </h3>
             {cart.map((item) => (
-              <CartItem key={item.id} item={item} onRemoveFromCart={removeFromCart} />
+              <CartItem
+                key={item.id}
+                item={item}
+                onRemoveFromCart={removeFromCart}
+              />
             ))}
             <p>Total Cost: ${calculateTotalCost()} per hour</p>
 
-            <ModalItems />
+            <CheckoutButton />
           </div>
         </div>
       </form>

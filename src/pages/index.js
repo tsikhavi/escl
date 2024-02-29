@@ -2,6 +2,8 @@ import Cta from "@/components/cta";
 import Faqs from "@/components/faqs";
 import Banner from "@/components/banner";
 import Reviews from "@/components/Reviews";
+import BookButton from "@/components/BookButton";
+import PriceCalculator from "@/components/PriceCalculator";
 
 const faqData = [
   {
@@ -66,17 +68,28 @@ export default function Home() {
           />
         </svg>
       </Banner>
-      <main className="flex min-h-screen  flex-col items-center justify-between mx-10 py-0 ">
+      <main className="flex min-h-screen font-[Lato] flex-col items-center justify-between mx-10 py-0 ">
         <div className="mt-60 mb-10">
           <Cta />
         </div>
-        <div className="container items-center py-8 mx-20 ">
-          <h3 className="text-3xl font-bold text-center mb-4">Frequently Asked Questions</h3>
+        <div className="mx-auto pb-10 gap-8 ">
+          <h3 className="font-bold text-gray-900 tracking-wide text-center uppercase py-8 text-3xl">
+            Pricing Calculator
+          </h3>
+          <PriceCalculator />
+          <BookButton />
+        </div>
+        <div className="container items-center py-8 mx-20 bg-gradient-to-r from-white to-gray-50">
+          <h3 className="text-3xl font-bold text-center mb-4">
+            Frequently Asked Questions
+          </h3>
           {faqData.map((faq, index) => (
             <Faqs key={index} question={faq.question} answer={faq.answer} />
           ))}
         </div>
-        <Reviews />
+        <div id="reviews">
+          <Reviews />
+        </div>
       </main>
     </>
   );

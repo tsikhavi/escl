@@ -90,12 +90,12 @@ const ListComponent = () => {
 
   return (
     <>
-      <ul className="list-disc list-inside text-xl py-4 leading-relaxed tracking-normal prose prose-slate text-justify nowrap">
+      <ul className="list-disc list-inside text-xl py-4 leading-2 tracking-normal prose prose-slate text-left nowrap">
         {list.map(
           (item, index) =>
             // Render only the visible items
             item.visible && (
-              <li key={index} className="text-lg text-gray-900">
+              <li key={index} className="text-lg text-gray-900 nowrap ">
                 {item.text}
               </li>
             )
@@ -103,8 +103,8 @@ const ListComponent = () => {
       </ul>
       <div className="flex justify-center mt-4">
         <button
-           id="reveal-link"
-          className="bg-gray-500 px-4 py-2 text-white rounded hover:bg-gray-700"
+          id="reveal-link"
+          className="bg-gray-800 px-4 py-2 text-white rounded hover:bg-gray-600"
           title="Reveal more services"
           // Call the function on click and pass the list and the setter
           onClick={() => revealList(list, setList)}>

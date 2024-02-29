@@ -6,10 +6,10 @@ const LINKS = [
   {
     title: "Cleaning Services",
     items: [
-      { name: "Regular", href: "/services/regular" },
-      { name: "Deep", href: "/services/deep" },
-      { name: "Post Renovation", href: "/services/post-renovation" },
-      { name: "After party", href: "/services/after-party" },
+      { name: "Regular", href: "/services#faqServices" },
+      { name: "Deep", href: "/services#faqServices" },
+      { name: "Post Renovation", href: "/services#faqServices" },
+      { name: "After party", href: "/services#faqServices" },
     ],
   },
   {
@@ -26,7 +26,7 @@ const LINKS = [
     items: [
       { name: "Gallery", href: "/gallery" },
       { name: "Social", href: "/social" },
-      { name: "Reviews", href: "/reviews" },
+      { name: "Reviews", href: "/#reviews" },
       { name: "Help center", href: "/help" },
     ],
   },
@@ -39,7 +39,7 @@ export default function Footer() {
     <footer
       className=" w-full
      z-20 text-gray-100 
-      bottom-0 pt-8 bg-gray-950 mt-auto">
+      bottom-0 pt-8 bg-gray-200 mt-auto">
       <div className="mx-auto w-full max-w-7xl px-8">
         <BackToTopButton />
 
@@ -48,8 +48,11 @@ export default function Footer() {
             Esthete Cleaning
             <br />
             <p className="text-base capitalize font-medium text-balance mt-4  ">
-              Life&apos;s too short! Let us take the hassle out of cleaning your home. You are a few{" "}
-              <Link href="/book" className="underline underline-offset-4 hover:text-gray-500 ">
+              Life&apos;s too short! Let us take the hassle out of cleaning your
+              home. You are a few{" "}
+              <Link
+                href="/book"
+                className="underline underline-offset-4 hover:text-gray-500 ">
                 clicks
               </Link>{" "}
               away from a stress-free life!
@@ -85,18 +88,29 @@ export default function Footer() {
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0 inline-flex px-1">
             <span>
               &copy; {currentYear} Esthete Cleaning. All Rights Reserved. App by
-              <Link className="px-1 hover:text-indigo-500" href="https://sautis.com/">
+              <Link
+                className="px-1 hover:text-indigo-500"
+                href="https://sautis.com/">
                 Sautis.
               </Link>
             </span>
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
-            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
-              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <Typography
+              as="a"
+              href="/book"
+              className="opacity-80 transition-opacity hover:opacity-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5">
                 <path
-                  fillRule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clipRule="evenodd"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                 />
               </svg>
             </Typography>

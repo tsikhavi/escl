@@ -11,10 +11,14 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
     rgb(var(--background-start-rgb));
-  font-family: "Lato", system-ui, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Lato", system-ui, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
 }
 
 @layer utilities {
@@ -52,4 +56,25 @@ body {
 
   /* Setting Border Radius */
   border-radius: 50%;
+}
+.BackgroundImage {
+  background-image: url("/Images/unsplash.jpg");
+}
+.BackgroundImageLanding {
+  background-image: url("/Images/landing.jpg");
+}
+.BackgroundImageAbout {
+  background-image: url("/Images/unsplashabout.jpg");
+}
+.BackgroundImageBook {
+  background-image: url("/Images/cleanroom.jpg");
+}
+.BackgroundImageServices {
+  background-image: url("/Images/unsplashservice.jpg");
+}
+.BackgroundImagePricing {
+  background-image: url("/Images/unsplashservice.jpg");
+}
+.BackgroundImageContact {
+  background-image: url("/Images/interior.jpg");
 }

@@ -1,4 +1,5 @@
 import BookingForm from "@/components/BookingForm";
+import { useRouter } from "next/router";
 
 const products = [
   {
@@ -36,10 +37,37 @@ const products = [
 ];
 
 export default function Booking() {
+  const router = useRouter();
+  const path = "/book#top";
   return (
     <>
+      <section className="w-screen min-h-96 bg-fixed z-10 BackgroundImageBook bg-cover bg-center bg-no-repeat">
+        <div className="w-full h-screen bg-gradient-to-tr from-white ">
+          <div className="flex justify-center pt-96 overflow-hidden">
+            <button
+              type="button"
+              onClick={() => router.push(path)}
+              className="bg-black text-white p-2 rounded-full">
+              Contact Us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 animate-bounce inline-flex text-white">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
       {/*main booking */}
-      <div className="bg-white py-4 px-10 rounded-lg shadow-md">
+      <div className="bg-white py-4 px-10 rounded-lg shadow-md" id="top">
         <BookingForm products={products} />
       </div>
     </>

@@ -1,5 +1,9 @@
 import React from "react";
-import { Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 import Image from "next/image";
 import AccordionCard from "./AccordionCard";
 
@@ -10,7 +14,9 @@ export default function ServicesAccordion() {
 
   return (
     <>
-      <Accordion open={open === 1} className="mb-2 px-4 rounded-lg border border-blue-gray-100">
+      <Accordion
+        open={open === 1}
+        className="mb-2 px-4 rounded-lg border border-blue-gray-100">
         <AccordionHeader
           onClick={() => handleOpen(1)}
           className={`border-b-0 transition-colors text-sm ${
@@ -83,13 +89,17 @@ export default function ServicesAccordion() {
           />
         </AccordionBody>
       </Accordion>
-      <Accordion open={open === 3} className="rounded-lg border border-blue-gray-100 px-4">
+      <Accordion
+        open={open === 3}
+        className="rounded-lg border border-blue-gray-100 px-4">
         <AccordionHeader
           onClick={() => handleOpen(3)}
           className={`border-b-0 transition-colors text-sm ${
             open === 3 ? "text-blue-500 hover:!text-blue-700" : ""
           }`}>
-          <div className="w-full flex justify-between" id="postRenovationCleaning">
+          <div
+            className="w-full flex justify-between"
+            id="postRenovationCleaning">
             <div className="">Post Renovation Cleaning</div>
             <div className="">
               <svg

@@ -6,7 +6,7 @@ const ActiveLink = ({ children, href }) => {
   const isActive = router.asPath === href;
 
   const linkStyles = ` uppercase transition text-gray-800 text-sm  ${
-    isActive ? "text-indigo-500 font-semibold underline " : "font-bold  "
+    isActive ? "text-gray-500 font-semibold underline " : "font-bold  "
   }`;
 
   const handleClick = (e) => {

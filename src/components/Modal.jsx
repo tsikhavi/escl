@@ -1,8 +1,14 @@
 import React from "react";
-import { Button, Dialog, DialogHeader, DialogBody, DialogFooter } from "@material-tailwind/react";
+import {
+  Button,
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  DialogFooter,
+} from "@material-tailwind/react";
 import Checkout from "@/components/Checkout";
 
-export default function ModalItems() {
+export default function CheckoutButton() {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen(!open);
@@ -24,7 +30,11 @@ export default function ModalItems() {
         }}>
         <div className="flex justify-between px-10">
           <DialogHeader>Book Cleaning</DialogHeader>
-          <Button variant="text" color="red" onClick={handleOpen} className="mr-1">
+          <Button
+            variant="text"
+            color="red"
+            onClick={handleOpen}
+            className="mr-1">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +56,11 @@ export default function ModalItems() {
           <Checkout />
         </DialogBody>
         <DialogFooter>
-          <Button variant="text" color="red" onClick={handleOpen} className="mr-1">
+          <Button
+            variant="text"
+            color="red"
+            onClick={handleOpen}
+            className="mr-1">
             <span>Cancel</span>
           </Button>
           <Button variant="gradient" color="green" onClick={handleOpen}>

@@ -14,7 +14,7 @@ export default function Reviews() {
 
             <Link
               href="#"
-              className="mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border border-allports-600 px-5 py-3 text-gray-700 transition bg-allports-50 hover:bg-allports-600 hover:text-white md:mt-0">
+              className="mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border border-gray-600 px-5 py-3 text-gray-700 transition bg-gray-50 hover:bg-gray-600 hover:text-white md:mt-0">
               <span className="font-medium"> Read all reviews </span>
 
               <svg
@@ -79,19 +79,22 @@ export default function Reviews() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-xl font-bold text-gray-700 sm:text-3xl">Regular Cleaning</p>
+                  <p className="text-xl font-bold text-gray-700 sm:text-3xl">
+                    Regular Cleaning
+                  </p>
 
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    Scheduling was quick and easy! I was able to book for that same week. The
-                    cleaning was thorough and she stayed an extra hour to make sure not a single
-                    spot was missed. Very polite and professional. 1000% booking again!
+                    Scheduling was quick and easy! I was able to book for that
+                    same week. The cleaning was thorough and she stayed an extra
+                    hour to make sure not a single spot was missed. Very polite
+                    and professional. 1000% booking again!
                   </p>
                 </div>
               </div>
 
               <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
                 &mdash; Alliyah G.
-                <span className="whitespace-nowrap rounded-full ml-2 bg-[#fefce8] px-2.5 py-0.5 text-sm text-allports-900">
+                <span className="whitespace-nowrap rounded-full ml-2 bg-[#fefce8] px-2.5 py-0.5 text-sm text-gray-900">
                   Jun 27, 2023
                 </span>
               </footer>
@@ -142,18 +145,21 @@ export default function Reviews() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-xl font-bold text-gray-700 sm:text-3xl">Deep Cleaning</p>
+                  <p className="text-xl font-bold text-gray-700 sm:text-3xl">
+                    Deep Cleaning
+                  </p>
 
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    Amazing service!! Very professional and trustworthy. I was very happy with their
-                    services and will definitely use their services again.
+                    Amazing service!! Very professional and trustworthy. I was
+                    very happy with their services and will definitely use their
+                    services again.
                   </p>
                 </div>
               </div>
 
               <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
                 &mdash; Martha P.
-                <span className="whitespace-nowrap rounded-full ml-2 bg-[#fefce8] px-2.5 py-0.5 text-sm text-allports-900">
+                <span className="whitespace-nowrap rounded-full ml-2 bg-[#fefce8] px-2.5 py-0.5 text-sm text-gray-900">
                   Jan 02, 2024
                 </span>
               </footer>
@@ -204,20 +210,23 @@ export default function Reviews() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-xl font-bold text-gray-700 sm:text-3xl">Stress Free</p>
+                  <p className="text-xl font-bold text-gray-700 sm:text-3xl">
+                    Stress Free
+                  </p>
 
                   <p className="mt-4 leading-relaxed text-gray-700">
-                    I am extremely pleased with Esthete Cleaning Services. They were very
-                    professional, pleasant, and they did a great job cleaning my place! My cat Babz,
-                    sheds a lot and I have been a more busy than usual recently. 10/10 recommend it
-                    to others.
+                    I am extremely pleased with Esthete Cleaning Services. They
+                    were very professional, pleasant, and they did a great job
+                    cleaning my place! My cat Babz, sheds a lot and I have been
+                    a more busy than usual recently. 10/10 recommend it to
+                    others.
                   </p>
                 </div>
               </div>
 
               <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
                 &mdash; Michael B.
-                <span className="whitespace-nowrap rounded-full ml-2 bg-[#fefce8] px-2.5 py-0.5 text-sm text-allports-900">
+                <span className="whitespace-nowrap rounded-full ml-2 bg-[#fefce8] px-2.5 py-0.5 text-sm text-gray-900">
                   Sept 07, 2023
                 </span>
               </footer>

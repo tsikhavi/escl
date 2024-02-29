@@ -41,7 +41,9 @@ export default function MapContact() {
           </p>
         </div>
         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-          <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+          <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
+            EMAIL
+          </h2>
           <Link
             href="mailto:esthete.cleaning@gmail.com?
               cc=nesssh17@gmail.com

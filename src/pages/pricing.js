@@ -1,27 +1,39 @@
 import BookButton from "@/components/BookButton";
 import PriceCalculator from "@/components/PriceCalculator";
 import PriceCard from "@/components/PriceCard";
-import Banner from "@/components/banner";
+import { useRouter } from "next/router";
 
 export default function Pricing() {
+  const router = useRouter();
+  const path = "/pricing#top";
   return (
     <>
-      <Banner path="/pricing#top">
-        Price Calculator
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6 animate-bounce inline-flex text-white">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-          />
-        </svg>
-      </Banner>
+      <section className="w-screen min-h-96 bg-fixed z-10 BackgroundImagePricing bg-cover bg-center bg-no-repeat">
+        <div className="w-full h-screen bg-gradient-to-tr from-white ">
+          <div className="flex justify-center pt-96 overflow-hidden">
+            <button
+              type="button"
+              onClick={() => router.push(path)}
+              className="bg-black text-white p-2 rounded-full">
+              Contact Us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 animate-bounce inline-flex text-white">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
       <section className="" id="top">
         <div className="mx-auto max-w-screen-2xl px-4 py-20 sm:px-6 lg:px-8 grid grid-cols-2 gap-4">
           {/*pricing calculator */}
