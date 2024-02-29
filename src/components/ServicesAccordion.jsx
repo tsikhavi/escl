@@ -4,7 +4,6 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import Image from "next/image";
 import AccordionCard from "./AccordionCard";
 
 export default function ServicesAccordion() {

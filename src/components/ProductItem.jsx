@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 const ProductItem = ({ product, onAddToCart }) => {
   const [showDetails, setShowDetails] = useState(false);
-  const { register, handleSubmit, errors } = useForm();
+  const { register } = useForm();
 
   return (
     <div className="border rounded-md p-4 mb-4 text-sm font-[roboto] tracking-tight space-y-0 ">
