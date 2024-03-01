@@ -2,12 +2,26 @@ import BookButton from "@/components/BookButton";
 import PriceCalculator from "@/components/PriceCalculator";
 import PriceCard from "@/components/PriceCard";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Pricing() {
   const router = useRouter();
   const path = "/pricing#top";
   return (
     <>
+    <Head>
+        <meta name="viewport" content="viewport-fit=cover" />
+        <meta charSet="UTF-8" />
+        <meta
+          name="description"
+          content="Cleaning Services in NewYork, Queens, New Jersey, Manhattan, US"
+        />
+        <meta
+          name="keywords"
+          content="Cleaning Services in NewYork, Queens, New Jersey, Manhattan, US"
+        />
+        <meta name="author" content="sautis" />
+      </Head>
       <section className="w-screen min-h-96 bg-fixed z-10 BackgroundImagePricing bg-cover bg-center bg-no-repeat">
         <div className="w-full h-screen bg-gradient-to-tr from-white ">
           <div className="flex justify-center pt-96 overflow-hidden">

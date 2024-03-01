@@ -9,6 +9,8 @@ export default function Services() {
   const path = "/services#topservices";
   return (
     <>
+    
+
       <section className="w-screen min-h-96 bg-fixed z-10 BackgroundImageServices bg-cover bg-center bg-no-repeat">
         <div className="w-full h-screen bg-gradient-to-tr from-white ">
           <div className="flex justify-center pt-96 overflow-hidden">
