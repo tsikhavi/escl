@@ -9,7 +9,7 @@ export default function Pricing() {
   const path = "/pricing#top";
   return (
     <>
-    <Head>
+      <Head>
         <meta name="viewport" content="viewport-fit=cover" />
         <meta charSet="UTF-8" />
         <meta

@@ -6,7 +6,7 @@ import CheckoutButton from "./Modal";
 
 const BookingForm = ({ products }) => {
   const [cart, setCart] = useState([]);
-  const { handleSubmit  } = useForm();
+  const { handleSubmit } = useForm();
 
   const addToCart = (product) => {
     setCart([...cart, product]);
