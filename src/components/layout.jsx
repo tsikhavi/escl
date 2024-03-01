@@ -56,13 +56,15 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <meta name="viewport" content="viewport-fit=cover" />
+        <meta name="viewport" content="initial-scale=1.0" />
         <meta charSet="UTF-8" />
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
         <meta name="author" content="sautis" />
         <title>
-          {pageTitle === "Home" ? "Home Page" : `${pageTitle} Page`}
+          {pageTitle === "Home"
+            ? "Home Page"
+            : `${pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1)} Page`}
         </title>
       </Head>
       <Navbar />
