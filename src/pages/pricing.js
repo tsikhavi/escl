@@ -15,7 +15,7 @@ export default function Pricing() {
               type="button"
               onClick={() => router.push(path)}
               className="bg-black text-white p-2 rounded-full">
-              Contact Us
+              Pricing calculator
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

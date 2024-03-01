@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 
 export default function Services() {
   const router = useRouter();
-  const path = "/contact#contactUs";
+  const path = "/services#topservices";
   return (
     <>
       <section className="w-screen min-h-96 bg-fixed z-10 BackgroundImageServices bg-cover bg-center bg-no-repeat">
@@ -16,7 +16,7 @@ export default function Services() {
               type="button"
               onClick={() => router.push(path)}
               className="bg-black text-white p-2 rounded-full">
-              Contact Us
+              Services
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

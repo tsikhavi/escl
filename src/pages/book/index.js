@@ -48,7 +48,7 @@ export default function Booking() {
               type="button"
               onClick={() => router.push(path)}
               className="bg-black text-white p-2 rounded-full">
-              Contact Us
+              Book Now
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
