@@ -40,7 +40,8 @@ export default function Layout({ children }) {
   const { pathname } = router;
   const pathSegments = pathname.split('/').filter(Boolean);
   const pageTitle = pathSegments.length > 0 ? pathSegments[0] : 'Home';
-  const { description, keywords } = pageMetadata[pageTitle] || pageMetadata['Home'];
+  const { description, keywords } = pageMetadata[pageTitle] || {};
+
 
   return (
     <>
